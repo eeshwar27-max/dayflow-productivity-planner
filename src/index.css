@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    /* Design System Tokens — Light Theme */
+    --df-bg: #f8fafc;
+    --df-surface: #ffffff;
+    --df-surface-muted: #f1f5f9;
+    --df-border: #e2e8f0;
+    --df-text-primary: #0f172a;
+    --df-text-secondary: #475569;
+    --df-text-muted: #64748b;
+    --df-primary: #4f46e5;
+    --df-primary-hover: #4338ca;
+    --df-accent: #7c3aed;
+    --df-radius-card: 1rem;
+    --df-radius-control: 0.75rem;
+    --df-shadow-card: 0 1px 3px 0 rgba(15, 23, 42, 0.04), 0 1px 2px -1px rgba(15, 23, 42, 0.04);
+  }
+
+  .dark {
+    color-scheme: dark;
+    /* Design System Tokens — Dark Theme */
+    --df-bg: #020617;
+    --df-surface: #0f172a;
+    --df-surface-muted: #1e293b;
+    --df-border: #1e293b;
+    --df-text-primary: #f8fafc;
+    --df-text-secondary: #cbd5e1;
+    --df-text-muted: #94a3b8;
+    --df-primary: #6366f1;
+    --df-primary-hover: #818cf8;
+    --df-accent: #8b5cf6;
+  }
+
+  body {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    background-color: var(--df-bg);
+    color: var(--df-text-primary);
+  }
+}
+
+@layer components {
+  .df-card {
+    @apply bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 rounded-2xl shadow-sm;
+  }
+  .df-input {
+    @apply px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500/80 focus:border-indigo-500 transition-colors;
+  }
+  .df-btn-primary {
+    @apply px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1;
+  }
+  .df-btn-secondary {
+    @apply px-3.5 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700/70 font-medium transition-colors;
+  }
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.55);
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="url(#dayflow_grad)" />
+  <path d="M18 22C18 19.7909 19.7909 18 22 18H34C41.732 18 48 24.268 48 32C48 39.732 41.732 46 34 46H22C19.7909 46 18 44.2091 18 42V22Z" fill="white" fill-opacity="0.18"/>
+  <path d="M24 26H33C36.3137 26 39 28.6863 39 32C39 35.3137 36.3137 38 33 38H24V26Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="43" cy="21" r="4" fill="#A5B4FC" />
+  <defs>
+    <linearGradient id="dayflow_grad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+</svg>
